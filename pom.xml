@@ -47,7 +47,7 @@
                 <version>3.8.1</version>
                 <configuration>
                     <!-- fixme No plugin found for prefix 'maven-plugin-example'  "mvn maven-plugin-example:hello-world" -->
-                    <prefix>maven-plugin-example</prefix>
+                    <goalPrefix>example</goalPrefix>
                     <!-- mvn com.example:maven-plugin-example:1.0-SNAPSHOT:hello-world -->
                     <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
                 </configuration>
