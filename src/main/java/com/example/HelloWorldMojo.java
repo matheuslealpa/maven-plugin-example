@@ -13,5 +13,6 @@ public class HelloWorldMojo extends AbstractMojo {
 
     public void execute() throws MojoExecutionException {
         getLog().info(greeting);
+
     }
 }

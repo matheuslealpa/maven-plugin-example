@@ -4,7 +4,7 @@
     <groupId>com.example</groupId>
     <artifactId>maven-plugin-example</artifactId>
     <packaging>maven-plugin</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <name>maven-plugin-example</name>
     <url>http://maven.apache.org</url>
     <properties>
@@ -39,7 +39,7 @@
         </dependency>
     </dependencies>
     <build>
-        <defaultGoal>maven-plugin-example</defaultGoal>
+        <finalName>${project.name}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -48,7 +48,7 @@
                 <configuration>
                     <!-- fixme No plugin found for prefix 'maven-plugin-example'  "mvn maven-plugin-example:hello-world" -->
                     <goalPrefix>example</goalPrefix>
-                    <!-- mvn com.example:maven-plugin-example:1.0-SNAPSHOT:hello-world -->
+                    <!-- mvn com.example:maven-plugin-example:1.0-SNAPSHOT:hello-world -Dgreeting="Olá mundo!" -->
                     <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
                 </configuration>
             </plugin>
