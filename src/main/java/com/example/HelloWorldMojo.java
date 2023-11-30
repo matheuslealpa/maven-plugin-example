@@ -5,7 +5,7 @@ import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 
-@Mojo(name = "hello-world")
+@Mojo(name = "run")
 public class HelloWorldMojo extends AbstractMojo {
 
     @Parameter(property = "greeting", defaultValue = "Hello, World!")
